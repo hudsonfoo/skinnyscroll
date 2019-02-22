@@ -13,7 +13,7 @@ $ npm install @hudsonfoo/skinnyscroll
 or
 
 ```
-$ yarn @hudsonfoo/skinnyscroll
+$ yarn add @hudsonfoo/skinnyscroll
 ```
 
 ## Usage
@@ -47,7 +47,7 @@ SkinnyScroll.on('my-event-name', element => {
 ### Fire only once
 
 ```js
-const SkinnyScroll = require('skinnyscroll');
+const SkinnyScroll = require('@hudsonfoo/skinnyscroll');
 
 function makeItSlide(element) {
   // Turn off event listener
@@ -62,7 +62,7 @@ SkinnyScroll.on('my-event-name', makeItSlide);
 ### Fire and turn off for a short amount of time
 
 ```js
-const SkinnyScroll = require('skinnyscroll');
+const SkinnyScroll = require('@hudsonfoo/skinnyscroll');
 
 function makeItSlide(element) {
   // Turn off event listener
