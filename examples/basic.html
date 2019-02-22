@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    section {
+      height: 95vh;
+      padding: 30px;
+      transition:all 1s ease;
+    }
+
+    .one {
+      background-color: #ededed;
+    }
+
+    .two {
+      background-color: #d8d8d8;
+    }
+
+    .three {
+      background-color: #c4c4c4;
+      opacity: 0;
+    }
+
+    .fadeIn {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <section class="one">
+    <h1>Section One</h1>
+  </section>
+
+  <section class="two" data-skinnyscroll='{ "name": "section-two" }'>
+    <h1>Section Two</h1>
+  </section>
+
+  <section class="three" data-skinnyscroll='{ "name": "section-three" }'>
+    <h1>Section Three</h1>
+  </section>
+
+  <script src="../dist/skinnyscroll.min.js"></script>
+  <script>
+    function changeColors(element) {
+      SkinnyScroll.off('section-two', changeColors);
+
+      element.style.background = '#000000';
+      element.style.color = '#ffffff';
+    }
+
+    function addFade(element) {
+      element.classList.add('fadeIn');
+    }
+
+    SkinnyScroll.on('section-two', changeColors);
+    SkinnyScroll.on('section-three', addFade);
+  </script>
+</body>
+</html>
