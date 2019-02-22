@@ -29,7 +29,7 @@ SkinnyScroll will query the DOM for nodes with that attribute after being loaded
 ```
 
 ```js
-const SkinnyScroll = require('skinnyscroll');
+const SkinnyScroll = require('@hudsonfoo/skinnyscroll');
 
 SkinnyScroll.on('my-event-name', element => {
   // Do whatever you want, but as an example:
