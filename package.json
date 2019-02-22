@@ -1,0 +1,30 @@
+{
+  "name": "@hudsonfoo/skinnyscroll",
+  "version": "1.0.0",
+  "description": "Extra itty bitty scroll watcher.",
+  "license": "MIT",
+  "repository": "hudsonfoo/skinnyscroll",
+  "main": "dist/skinnyscroll.min.js",
+  "author": "David Hudson <david@worklovework.com> (worklovework.com)",
+  "scripts": {
+    "build": "node-minify --compressor babel-minify --input 'src/skinnyscroll.js' --output 'dist/skinnyscroll.min.js'"
+  },
+  "keywords": [
+    "scroller",
+    "scroll",
+    "scroll class",
+    "scrolljs",
+    "scroll js",
+    "scrollTo",
+    "scroll events",
+    "scrollintoview",
+    "scroll into view",
+    "window scroll",
+    "window scroll polyfill",
+    "scroll into view polyfill"
+  ],
+  "devDependencies": {
+    "@node-minify/babel-minify": "^4.0.5",
+    "@node-minify/cli": "^4.1.0"
+  }
+}
